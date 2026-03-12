@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Customer Support Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="app-shell">
+        <section class="chat-card">
+            <header class="chat-header">
+                <div>
+                    <p class="eyebrow">Customer Support</p>
+                    <h1>AI Support Assistant</h1>
+                </div>
+                <p class="subtitle">Ask about pricing, delivery, refunds, contact details, or general services.</p>
+            </header>
+
+            <section id="chat-messages" class="chat-messages" aria-live="polite">
+                <article class="message bot-message">
+                    <div class="message-meta">Support Bot</div>
+                    <p>Hello. How can I help you today?</p>
+                </article>
+            </section>
+
+            <form id="chat-form" class="chat-form">
+                <label class="sr-only" for="message-input">Type your message</label>
+                <input
+                    id="message-input"
+                    name="message"
+                    type="text"
+                    maxlength="500"
+                    placeholder="Type your question here..."
+                    autocomplete="off"
+                    required
+                >
+                <button id="send-button" type="submit">Send</button>
+            </form>
+
+            <p id="status-text" class="status-text" role="status"></p>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
