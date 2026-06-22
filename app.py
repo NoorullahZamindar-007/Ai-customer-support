@@ -35,7 +35,7 @@ def create_app() -> Flask:
 
     @app.get("/api/logs")
     def get_logs():
-        logs = database.fetch_recent_logs(limit=app.config["LOGS_LIMIT"])
+        logs = database.fetch_recent_logs(limit=app.config["LOGS_LIMIT"]) 
         return jsonify({"logs": logs})
 
     @app.post("/api/chat")
