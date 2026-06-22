@@ -10,7 +10,7 @@ def create_app() -> Flask:
     app.config.from_object(Config)
 
     database = Database(app.config["DATABASE_PATH"]) 
-    database.init_db()
+    database.init_db() 
 
     hf_service = HuggingFaceService(
         api_token=app.config["HF_API_TOKEN"],
