@@ -3,7 +3,7 @@ from flask import Flask, jsonify, render_template, request
 from config import Config
 from database import Database
 from services.hf_service import HuggingFaceService
-
+ 
 
 def create_app() -> Flask:
     app = Flask(__name__)
