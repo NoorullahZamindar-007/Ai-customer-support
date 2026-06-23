@@ -49,7 +49,7 @@ def create_app() -> Flask:
 
         message = payload.get("message", "") 
         if not isinstance(message, str):
-            return jsonify({"error": "The message must be a string."}), 400
+            return jsonify({"error": "The message must be a string."}), 400 
 
         cleaned_message = message.strip()
         if not cleaned_message:
