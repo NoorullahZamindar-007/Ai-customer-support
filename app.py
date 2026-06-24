@@ -26,7 +26,7 @@ def create_app() -> Flask:
     @app.get("/api/health")
     def health_check():
         return jsonify(
-            {
+            { 
                 "status": "ok",
                 "service": "ai-customer-support-chatbot",
                 "model": app.config["HF_MODEL_NAME"],
