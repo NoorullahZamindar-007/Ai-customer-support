@@ -81,7 +81,7 @@ def create_app() -> Flask:
                     {
                         "error": str(exc),
                         "status": "error",
-                        "log_id": log_id,
+                        "log_id": log_id, 
                     }
                 ),
                 502,
