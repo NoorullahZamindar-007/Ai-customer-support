@@ -6,7 +6,7 @@ from services.hf_service import HuggingFaceService
  
 
 def create_app() -> Flask:
-    app = Flask(__name__)
+    app = Flask(__name__) 
     app.config.from_object(Config) 
 
     database = Database(app.config["DATABASE_PATH"]) 
