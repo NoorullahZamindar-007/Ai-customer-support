@@ -17,7 +17,7 @@ def create_app() -> Flask:
         model_name=app.config["HF_MODEL_NAME"],
         timeout=app.config["HF_API_TIMEOUT"], 
         system_prompt=app.config["SYSTEM_PROMPT"],   
-    )
+    ) 
 
     @app.get("/")
     def index():
