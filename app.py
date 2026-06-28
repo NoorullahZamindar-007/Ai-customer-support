@@ -9,7 +9,7 @@ def create_app() -> Flask:
     app = Flask(__name__) 
     app.config.from_object(Config) 
 
-    database = Database(app.config["DATABASE_PATH"]) 
+    database = Database(app.config["DATABASE_PATH"])  
     database.init_db() 
 
     hf_service = HuggingFaceService(
