@@ -41,7 +41,7 @@ def create_app() -> Flask:
     @app.post("/api/chat")
     def chat():
         if not request.is_json:
-            return jsonify({"error": "Request must be JSON."}), 400
+            return jsonify({"error": "Request must be JSON."}), 400 
 
         payload = request.get_json(silent=True)
         if not isinstance(payload, dict):
