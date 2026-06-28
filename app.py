@@ -15,7 +15,7 @@ def create_app() -> Flask:
     hf_service = HuggingFaceService(
         api_token=app.config["HF_API_TOKEN"], 
         model_name=app.config["HF_MODEL_NAME"],
-        timeout=app.config["HF_API_TIMEOUT"], 
+        timeout=app.config["HF_API_TIMEOUT"],    
         system_prompt=app.config["SYSTEM_PROMPT"],    
     ) 
 
