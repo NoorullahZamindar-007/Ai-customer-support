@@ -45,7 +45,7 @@ def create_app() -> Flask:
 
         payload = request.get_json(silent=True)
         if not isinstance(payload, dict):
-            return jsonify({"error": "Invalid JSON payload."}), 400
+            return jsonify({"error": "Invalid JSON payload."}), 400 
 
         message = payload.get("message", "") 
         if not isinstance(message, str):
