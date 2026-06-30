@@ -18,7 +18,7 @@ class Config:
     HF_API_BASE_URL = os.getenv(
         "HF_API_BASE_URL",
         "https://router.huggingface.co/v1",
-    )
+    ) 
     LOGS_LIMIT = int(os.getenv("LOGS_LIMIT", "20"))
     DATABASE_PATH = DATABASE_PATH
     SYSTEM_PROMPT = (
