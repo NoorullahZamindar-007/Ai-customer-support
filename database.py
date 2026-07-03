@@ -30,7 +30,7 @@ class Database:
     def init_db(self) -> None:
         with closing(self.get_connection()) as connection:
             connection.execute(CREATE_TABLE_SQL)
-            connection.commit()
+            connection.commit() 
 
     def save_chat_log(
         self,
