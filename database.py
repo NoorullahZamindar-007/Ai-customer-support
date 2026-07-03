@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS chat_logs (
 
 
 class Database:
-    def __init__(self, db_path: str) -> None:
+    def __init__(self, db_path: str) -> None: 
         self.db_path = db_path
         os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
 
