@@ -20,7 +20,7 @@ class Config:
         "https://router.huggingface.co/v1",
     ) 
     LOGS_LIMIT = int(os.getenv("LOGS_LIMIT", "20"))
-    DATABASE_PATH = DATABASE_PATH
+    DATABASE_PATH = DATABASE_PATH    
     SYSTEM_PROMPT = (
         "You are a professional customer support assistant for a business website. "
         "Be polite, concise, and helpful. Keep answers short and easy to read. "
