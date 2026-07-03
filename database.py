@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS chat_logs (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_message TEXT NOT NULL, 
     bot_reply TEXT,
-    created_at TEXT NOT NULL,
+    created_at TEXT NOT NULL, 
     status TEXT NOT NULL,
     error_message TEXT,
     ip_address TEXT
