@@ -7,7 +7,7 @@ from typing import Any, Dict, List, Optional
 CREATE_TABLE_SQL = """
 CREATE TABLE IF NOT EXISTS chat_logs (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_message TEXT NOT NULL,
+    user_message TEXT NOT NULL, 
     bot_reply TEXT,
     created_at TEXT NOT NULL,
     status TEXT NOT NULL,
